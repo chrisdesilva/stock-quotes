@@ -1,0 +1,22 @@
+.root {
+  width: 500px;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

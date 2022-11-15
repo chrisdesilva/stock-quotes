@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 120px;
+  align-self: center;
+}
