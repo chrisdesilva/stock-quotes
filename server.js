@@ -19,7 +19,7 @@ async function fetchQuote(symbol) {
 app.get("/api/quote", (req, res) => {
   const { symbol } = req.query;
   const result = fetchQuote(symbol).then((data) => {
-    // Finnhub returns a 200 even for symbols that don't exist. Send a 400 if we don't have data.d (daily change information)
+    // Finnhub returns a 200 even for symbols that don't exist. Send a 404 if we don't have data.d (daily change information)
     if (data.d === null) {
       res.status(404).send("Unable to find stock information for that symbol");
       return;
